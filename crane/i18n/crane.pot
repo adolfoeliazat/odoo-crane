@@ -1,0 +1,2090 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* crane
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20170123\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-27 06:50+0000\n"
+"PO-Revision-Date: 2017-03-27 06:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crane
+#: model:mail.template,body_html:crane.email_template_work_order
+msgid "\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"    <p>Hello ${object.customer_id.name},</p>\n"
+"    \n"
+"    <p>Here is a work order from ${object.company_id.name}: </p>\n"
+"    \n"
+"    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
+"       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
+"       &nbsp;&nbsp;Order number: <strong>${object.name}</strong><br />\n"
+"       &nbsp;&nbsp;Order date: ${object.date}<br />\n"
+"       % if object.origin:\n"
+"       &nbsp;&nbsp;Order reference: ${object.origin}<br />\n"
+"       % endif\n"
+"       % if object.customer_person_id:\n"
+"       &nbsp;&nbsp;Reviewed by: ${object.customer_person_id}<br />\n"
+"       % endif\n"
+"    </p>\n"
+"\n"
+"    <br/>\n"
+"    <p>If you have any question, do not hesitate to contact us.</p>\n"
+"    <p>Thank you!</p>\n"
+"    <br/>\n"
+"    <br/>\n"
+"    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: #8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id.name}</strong></h3>\n"
+"    </div>\n"
+"    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: 16px; background-color: #F2F2F2;\">\n"
+"        <span style=\"color: #222; margin-bottom: 5px; display: block; \">\n"
+"        % if object.company_id.street:\n"
+"            ${object.company_id.street}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.street2:\n"
+"            ${object.company_id.street2}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.city or object.company_id.zip:\n"
+"            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.country_id:\n"
+"            ${object.company_id.state_id and ('%s, ' % object.company_id.state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
+"        % endif\n"
+"        </span>\n"
+"        % if object.company_id.phone:\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">\n"
+"                Phone:&nbsp; ${object.company_id.phone}\n"
+"            </div>\n"
+"        % endif\n"
+"        % if object.company_id.website:\n"
+"            <div>\n"
+"                Web :&nbsp;<a href=\"${object.company_id.website}\">${object.company_id.website}</a>\n"
+"            </div>\n"
+"        %endif\n"
+"        <p></p>\n"
+"    </div>\n"
+"</div>\n"
+"             "
+msgstr ""
+
+#. module: crane
+#: model:mail.template,report_name:crane.email_template_work_order
+msgid "${(object.name or '').replace('/','_')}"
+msgstr ""
+
+#. module: crane
+#: model:mail.template,subject:crane.email_template_work_order
+msgid "${object.company_id.name} Work Order (Ref ${object.name or 'n/a' })"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_23
+msgid "0975665667"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_15
+msgid "10 m"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_50
+msgid "10 t"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_24
+msgid "10/03/2011"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_22
+msgid "12"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_58
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_66
+msgid "12 t"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_14
+msgid "158 kW"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_17
+msgid "16 t"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_5
+msgid "180 kW/245 HP"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_77
+msgid "180Kw"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_42
+msgid "2 m"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_78
+msgid "20"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_16
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_43
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_7
+msgid "20 mm"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_54
+msgid "21"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_53
+msgid "211Kw"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_25
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_62
+msgid "23"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_70
+msgid "25"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_61
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_69
+msgid "250Kw"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_39
+msgid "2t"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_21
+msgid "32523"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_60
+msgid "34254645"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_68
+msgid "3445345"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_6
+msgid "4 m"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_8
+msgid "43.5 t"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_49
+msgid "5 VSO"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_52
+msgid "54654645"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_37
+msgid "6575465"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_76
+msgid "7673445345"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_74
+msgid "8 t"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "<span class=\"codup_header\">Overall Comments:</span>"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "<span class=\"codup_header_white\">Description of Work</span>"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "<span class=\"codup_header_white\">FOLLOW UP:</span>"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "<span class=\"codup_header_white\">JOB COMPLETED:</span>"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "<span class=\"codup_header_white\">REPORT REVIEW WITH CUSTOMER:</span>"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "AM"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Add contacts to notify..."
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Address/Jobsite"
+msgstr ""
+
+#. module: crane
+#: selection:crane.repeat.work.order,type:0
+msgid "All"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_29
+#: model:crane.inspection,name:crane.crane_inspection_10
+#: model:crane.specification,name:crane.crane_specification_11
+msgid "Anchorage Device"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_approve_uid
+msgid "Approved by"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.type,name:crane.crane_equipment_type_4
+msgid "Auto Crane"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_26
+#: model:crane.inspection,name:crane.crane_inspection_46
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_14
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_34
+msgid "Axles"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_27
+#: model:crane.inspection,name:crane.crane_inspection_47
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_15
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_35
+msgid "Beerings"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_36
+msgid "Big Red 2 Ton"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_30
+msgid "Black"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_104
+#: model:crane.inspection,name:crane.crane_inspection_23
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_11
+msgid "Brake"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_28
+#: model:crane.inspection,name:crane.crane_inspection_48
+#: model:crane.inspection,name:crane.crane_inspection_63
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_16
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_36
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_51
+msgid "Brake Drum"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_25
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_13
+msgid "Bridge"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.type,name:crane.crane_equipment_type_3
+msgid "Bridge Crane"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_83
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_71
+msgid "Brushes"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_3
+msgid "Buckles"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_29
+#: model:crane.inspection,name:crane.crane_inspection_49
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_17
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_37
+msgid "Bumpers"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "CERTIFICATE #"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "CUSTOMER"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_18
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_64
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_9
+#: model:crane.inspection,name:crane.crane_inspection_30
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_18
+msgid "Cab"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_64
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_52
+msgid "Cable Rope Guide"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_1
+msgid "Cable Tension"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+#: model:ir.ui.view,arch_db:crane.view_repeat_work_order
+msgid "Cancel"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_17
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_39
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_53
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_61
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_69
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_77
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_8
+#: model:crane.inspection,name:crane.crane_inspection_13
+#: model:crane.inspection,name:crane.crane_inspection_94
+#: model:crane.specification,name:crane.crane_specification_21
+#: model:crane.specification,name:crane.crane_specification_35
+#: model:crane.specification,name:crane.crane_specification_46
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_1
+msgid "Capacity"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_11
+msgid "Carabiners"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_certificate
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view1
+msgid "Certificate Number"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_43
+#: model:crane.specification,name:crane.crane_specification_25
+msgid "Chain/Rope Size"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_6
+msgid "Chest/Shoulder O-Rings"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.view_see_photo
+msgid "Close"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_84
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_72
+msgid "Collectors"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_30
+#: model:crane.specification,name:crane.crane_specification_12
+msgid "Color"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_comment
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_comment
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Comment"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_company_id
+msgid "Company"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_65
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_53
+msgid "Compens. Sheave"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_completed
+msgid "Completed"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_completion_date
+msgid "Completion Date"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Compose Email"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_55
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_63
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_71
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_79
+#: model:crane.specification,name:crane.crane_specification_37
+msgid "Conditions"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_85
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_73
+msgid "Conductors"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.menu,name:crane.menu_crane_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_86
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_74
+msgid "Contactors"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_82
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_70
+msgid "Contacts"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_18
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_56
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_64
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_72
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_80
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_9
+#: model:crane.specification,name:crane.crane_specification_38
+#: model:crane.specification,name:crane.crane_specification_47
+msgid "Control"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_5
+msgid "Corsal O-Rings"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_66
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_54
+msgid "Coupling"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_31
+#: model:crane.inspection,name:crane.crane_inspection_50
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_19
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_38
+msgid "Couplings"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_5
+msgid "Crane 021"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_7
+msgid "Crane 025"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_8
+msgid "Crane 029"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_6
+msgid "Crane 031"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_49
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_57
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_65
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_73
+#: model:crane.specification,name:crane.crane_specification_31
+msgid "Crane Location"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_54
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_62
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_70
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_78
+#: model:crane.specification,name:crane.crane_specification_36
+msgid "Crane No."
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_87
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_75
+msgid "Crane Voltage"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_view_repeat_work_order
+msgid "Create a Follow up Work Order"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_specification_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_create_uid
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_specification_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_create_date
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_customer_id
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_customer_id
+#: model:ir.ui.menu,name:crane.menu_crane_customer
+#: model:ir.ui.menu,name:crane.menu_crane_customer_customer
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Customer"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "D/T"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Data:"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_date
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Date"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_description
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_description
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_description
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+#: model:ir.ui.view,arch_db:crane.crane_work_order_form_view
+msgid "Description"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_90
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_78
+msgid "Disconnect"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_specification_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_display_name
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_display_name
+#: model:ir.model.fields,field_description:crane.field_report_crane_work_order_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: crane
+#: selection:crane.task,state:0
+#: selection:crane.work.order,state:0
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Done"
+msgstr ""
+
+#. module: crane
+#: selection:crane.work.order,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_32
+#: model:crane.inspection,name:crane.crane_inspection_51
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_20
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_39
+msgid "Drive Shaft"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_33
+#: model:crane.inspection,name:crane.crane_inspection_52
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_21
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_40
+msgid "Drive Wheels"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_68
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_56
+msgid "Drum"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_69
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_57
+msgid "Drum Shaft"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_duration
+msgid "Duration h:m"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_34
+#: model:crane.inspection,name:crane.crane_inspection_53
+#: model:crane.inspection,name:crane.crane_inspection_70
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_22
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_41
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_58
+msgid "Electrical Brake"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_81
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_69
+msgid "Electrical Review"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_end_date
+msgid "End"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_4
+#: model:crane.equipment.type,name:crane.crane_equipment_type_2
+msgid "Engine Hoist"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_equipment
+#: model:ir.model,name:crane.model_crane_equipment
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_equipment_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_equipment_id
+#: model:ir.ui.menu,name:crane.menu_crane_equipment_equipment
+#: model:ir.ui.view,arch_db:crane.crane_equipment_form_view
+msgid "Equipment"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_certificate
+msgid "Equipment Certificate Number"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_equipment_feature
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Equipment Features"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_name
+msgid "Equipment Name"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view1
+msgid "Equipment Number"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_equipment_type
+#: model:ir.model,name:crane.model_crane_equipment_type
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_equipment_type_id
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_equipment_type_id
+#: model:ir.model.fields,field_description:crane.field_crane_specification_equipment_type_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_equipment_type
+#: model:ir.ui.menu,name:crane.menu_crane_configuration_equipment_type
+#: model:ir.ui.view,arch_db:crane.crane_equipment_type_form_view
+msgid "Equipment Type"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_name
+msgid "Equipment Type Name"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_equipment_feature_line
+msgid "Equipment feature line"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_name
+msgid "Feature"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_equipment_form_view
+msgid "Feature Lines"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_ids
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_specification_ids
+#: model:ir.ui.view,arch_db:crane.crane_equipment_type_form_view
+msgid "Feature List"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_specification_name
+msgid "Feature Name"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_88
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_76
+msgid "Festoon"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Finish Time"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_102
+#: model:crane.inspection,name:crane.crane_inspection_21
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_9
+msgid "Frame"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_good_value
+msgid "GOOD"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.type,name:crane.crane_good_repair_replace_type
+msgid "GOOD/REPAIR/REPLACE"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_35
+#: model:crane.inspection,name:crane.crane_inspection_71
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_23
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_59
+msgid "Gear Case"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_54
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_42
+msgid "Gear Cases"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_72
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_60
+msgid "Gearing"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Good"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_67
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_55
+msgid "Greep Speed"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_59
+msgid "HM4647"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_67
+msgid "HM4648"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_1
+msgid "HS 825 HD Litronic"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_3
+#: model:crane.equipment.type,name:crane.crane_equipment_type_1
+msgid "Harness / Fall Arrest"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_header
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_header
+msgid "Header"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_62
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_50
+msgid "Hoist"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_50
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_58
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_66
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_74
+#: model:crane.specification,name:crane.crane_specification_32
+msgid "Hoist Capacity"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_51
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_59
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_67
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_75
+#: model:crane.specification,name:crane.crane_specification_33
+msgid "Hoist Model"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_52
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_60
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_68
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_76
+#: model:crane.specification,name:crane.crane_specification_34
+msgid "Hoist S/N"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_78
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_66
+msgid "Hook"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_14
+#: model:crane.inspection,name:crane.crane_inspection_95
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_2
+msgid "Hook Inspection"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_45
+#: model:crane.specification,name:crane.crane_specification_27
+msgid "Hook Load Point"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_44
+#: model:crane.specification,name:crane.crane_specification_26
+msgid "Hook Throat"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_89
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_77
+msgid "Horn"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Hours Shown Include Travel Time"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_36
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_24
+msgid "Housekeeping"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_40
+msgid "Hydraulic"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_100
+#: model:crane.inspection,name:crane.crane_inspection_19
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_7
+msgid "Hydraulic Cylinder"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_id
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_id
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_id
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_id
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_id_1980
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_id
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_id
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_id
+#: model:ir.model.fields,field_description:crane.field_crane_specification_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_id
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_id
+#: model:ir.model.fields,field_description:crane.field_report_crane_work_order_id
+msgid "ID"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_25
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_38
+#: model:crane.specification,name:crane.crane_specification_20
+#: model:crane.specification,name:crane.crane_specification_7
+msgid "ID No."
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_image
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_photo
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_image
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_image
+msgid "Image"
+msgstr ""
+
+#. module: crane
+#: selection:crane.work.order,state:0
+msgid "In Process"
+msgstr ""
+
+#. module: crane
+#: selection:crane.task,state:0
+msgid "In Progress"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_55
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_63
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_71
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_79
+msgid "Indoor"
+msgstr ""
+
+#. module: crane
+#: selection:crane.task,type:0
+#: model:ir.model,name:crane.model_crane_inspection
+msgid "Inspection"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Inspection Certificate"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_task_inspection_line
+msgid "Inspection Line"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_inspection_point_id
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Inspection Point"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_inspection_point_type
+#: model:ir.model,name:crane.model_crane_inspection_point_type
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_point_type_id
+#: model:ir.ui.menu,name:crane.menu_crane_configuration_inspection_point_type
+#: model:ir.ui.view,arch_db:crane.crane_inspection_point_type_form_view
+msgid "Inspection Point Type"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_inspection_point_value
+msgid "Inspection Point Value"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_inspection_ids
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_ids
+#: model:ir.ui.view,arch_db:crane.crane_equipment_type_form_view
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Inspection Points"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Inspection Report"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_result
+#: model:ir.model.fields,field_description:crane.field_crane_task_result
+msgid "Inspection Result"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_29
+msgid "JSP Screwgate Karabiner"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_75
+msgid "KL564"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_55
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_43
+msgid "Key & Keyways"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_37
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_25
+msgid "Keys"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_3
+msgid "LBH CC18P2 45835283"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_ids
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Labor"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_task_labor_line
+msgid "Labor Line"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_name
+msgid "Labor Work"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_38
+#: model:crane.inspection,name:crane.crane_inspection_56
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_26
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_44
+msgid "Ladder [Cab]"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_7
+msgid "Lanyard"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_27
+#: model:crane.specification,name:crane.crane_specification_9
+msgid "Lanyard Hook 1"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_28
+#: model:crane.specification,name:crane.crane_specification_10
+msgid "Lanyard Hook 2"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_8
+msgid "Lanyard Hooks"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_inspection___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_specification___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_task___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line___last_update
+#: model:ir.model.fields,field_description:crane.field_crane_work_order___last_update
+#: model:ir.model.fields,field_description:crane.field_report_crane_work_order___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_specification_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_task_write_uid
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_type_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_see_photo_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_specification_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_task_write_date
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_80
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_68
+msgid "Latch"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_2
+msgid "Liebherr"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_12
+msgid "Lifeline Condition"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_15
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_42
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_6
+#: model:crane.specification,name:crane.crane_specification_24
+#: model:crane.specification,name:crane.crane_specification_44
+msgid "Lift Height"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_75
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_63
+msgid "Limits"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_103
+#: model:crane.inspection,name:crane.crane_inspection_22
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_10
+msgid "Load Arm"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_105
+#: model:crane.inspection,name:crane.crane_inspection_24
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_12
+msgid "Load Test"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_19
+#: model:crane.specification,name:crane.crane_specification_1
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_location
+msgid "Location"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_22
+#: model:crane.specification,name:crane.crane_specification_4
+msgid "Lot No."
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_39
+#: model:crane.inspection,name:crane.crane_inspection_57
+#: model:crane.inspection,name:crane.crane_inspection_73
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_27
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_45
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_61
+msgid "Lubrication"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_20
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_35
+#: model:crane.specification,name:crane.crane_specification_17
+#: model:crane.specification,name:crane.crane_specification_2
+msgid "Make"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_11
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_2
+#: model:crane.specification,name:crane.crane_specification_40
+msgid "Manufacture"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_24
+#: model:crane.specification,name:crane.crane_specification_6
+msgid "Manufacturers Date"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Material (Stock)"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_40
+#: model:crane.inspection,name:crane.crane_inspection_58
+#: model:crane.inspection,name:crane.crane_inspection_74
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_28
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_46
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_62
+msgid "Mechanical Brake"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_image_medium
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_image_medium
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_image_medium
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_1
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_10
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_36
+#: model:crane.specification,name:crane.crane_specification_18
+#: model:crane.specification,name:crane.crane_specification_39
+msgid "Model"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_14
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_41
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_5
+#: model:crane.specification,name:crane.crane_specification_23
+#: model:crane.specification,name:crane.crane_specification_43
+msgid "Motor Data"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_91
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_79
+msgid "Motors"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_no_value
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "NO"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_notok_value
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "NOT OK"
+msgstr ""
+
+#. module: crane
+#: selection:crane.task,state:0
+msgid "New"
+msgstr ""
+
+#. module: crane
+#: selection:crane.repeat.work.order,type:0
+msgid "No"
+msgstr ""
+
+#. module: crane
+#: selection:crane.inspection.point.value,result:0
+#: selection:crane.task,result:0
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Not Safe"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.view_repeat_work_order
+msgid "Not completed work orders cannot be repeated!"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_notes
+#: model:ir.model.fields,field_description:crane.field_crane_task_notes
+#: model:ir.ui.view,arch_db:crane.crane_equipment_form_view
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Notes"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "O/T"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_ok_value
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "OK"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.type,name:crane.crane_ok_notok_type
+msgid "OK/NOT OK"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_19
+msgid "On hand"
+msgstr ""
+
+#. module: crane
+#: selection:crane.repeat.work.order,type:0
+msgid "Only failed"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.client,name:crane.action_client_crane_menu
+msgid "Open Crane Menu"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_sequence
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_sequence
+#: model:ir.model.fields,field_description:crane.field_crane_specification_sequence
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_sequence
+msgid "Order"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_48
+#: model:crane.specification,name:crane.crane_specification_30
+msgid "Other 1"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_31
+#: model:crane.specification,name:crane.crane_specification_13
+msgid "Other 1 - System"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_32
+#: model:crane.specification,name:crane.crane_specification_14
+msgid "Other 2 - Details"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_33
+#: model:crane.specification,name:crane.crane_specification_15
+msgid "Other 3 - Details"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_20
+msgid "PETZL"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "PM"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "PO #"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_po_number
+msgid "PO Number"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_57
+msgid "Paper Shop"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_task_part_line
+msgid "Part Line"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_21
+#: model:crane.specification,name:crane.crane_specification_3
+msgid "Part No."
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_name
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Part Number"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_ids
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Parts"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_56
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_80
+#: model:crane.inspection,name:crane.crane_inspection_92
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_80
+msgid "Pendant"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_47
+#: model:crane.specification,name:crane.crane_specification_29
+msgid "Pendant Buttons"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_46
+#: model:crane.specification,name:crane.crane_specification_28
+msgid "Pendant Data"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_18
+#: model:crane.inspection,name:crane.crane_inspection_99
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_6
+msgid "Pendant/Control"
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_view_see_photo
+#: model:ir.ui.view,arch_db:crane.view_see_photo
+msgid "Photo"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Photo of Point"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_41
+#: model:crane.inspection,name:crane.crane_inspection_59
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_29
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_47
+msgid "Pinions"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_name
+msgid "Point Name"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_point_type_id
+msgid "Point Type"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "QTY"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_10
+msgid "QY16C XCMG"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_qty
+msgid "Quantity"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_repair_value
+msgid "REPAIR"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_replace_value
+msgid "REPLACE"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_72
+#: model:crane.inspection,name:crane.crane_inspection_93
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_81
+msgid "Radio"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Recipients"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Repair"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_repeat_work_order_type
+msgid "Repeat Inspection Task"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.view_repeat_work_order
+msgid "Repeat WO"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_repeat_work_order
+msgid "Repeat Work Order"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Replace"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Req."
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_reviewed
+msgid "Reviewed"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_customer_person_id
+msgid "Reviewed by Customer"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_42
+#: model:crane.inspection,name:crane.crane_inspection_60
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_30
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_48
+msgid "Ring Gear"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_76
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_64
+msgid "Rope"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_16
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_7
+#: model:crane.inspection,name:crane.crane_inspection_77
+#: model:crane.specification,name:crane.crane_specification_45
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_65
+msgid "Rope Size"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_9
+msgid "SRL"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "STATUS:"
+msgstr ""
+
+#. module: crane
+#: selection:crane.inspection.point.value,result:0
+#: selection:crane.task,result:0
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Safe"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Save as a new template"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Save as new template"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_101
+#: model:crane.inspection,name:crane.crane_inspection_20
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_8
+msgid "Seals"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_26
+msgid "Seat"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_see_photo
+msgid "See Photo"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Send"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_work_order_form_view
+msgid "Send by Email"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_23
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_37
+#: model:crane.specification,name:crane.crane_specification_19
+#: model:crane.specification,name:crane.crane_specification_5
+msgid "Serial No."
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_34
+#: selection:crane.task,type:0
+#: model:ir.ui.menu,name:crane.menu_crane_service
+msgid "Service"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Service Report"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_user_id
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Serviceman"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_15
+#: model:crane.inspection,name:crane.crane_inspection_96
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_3
+msgid "Sheave/Guide"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_79
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_67
+msgid "Sheaves"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_res_users_signature_image
+msgid "Signature Image"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_35
+msgid "Sky Enterprise"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_image_small
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_image_small
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_image_small
+msgid "Small-sized image"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_origin
+msgid "Source Document"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_34
+#: model:crane.specification,name:crane.crane_specification_16
+msgid "Specific Location"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_specification
+msgid "Specification"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_start_date
+msgid "Start"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Start Time"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_point_value_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_state
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_state
+msgid "Status"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_4
+msgid "Strap Keepers"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_2
+msgid "Straps"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Subject..."
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_subtype
+msgid "Subtype"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_51
+msgid "TH678"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_crane_task
+#: model:ir.model.fields,field_description:crane.field_crane_task_inspection_line_task_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_task_id
+#: model:ir.model.fields,field_description:crane.field_crane_task_name
+#: model:ir.model.fields,field_description:crane.field_crane_task_part_line_task_id
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_task_copy_ids
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_task_ids
+#: model:ir.ui.view,arch_db:crane.crane_task_form_view
+msgid "Task"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view
+#: model:ir.ui.view,arch_db:crane.crane_task_tree_view1
+msgid "Tasks"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Technician's Signature"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_task_total_labor
+msgid "Total Labor h:m"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_43
+#: model:crane.inspection,name:crane.crane_inspection_61
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_31
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_49
+msgid "Trailers"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_27
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_28
+msgid "Triack"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_45
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_33
+msgid "Trolley"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_13
+msgid "Truck"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_2
+msgid "Truck Crane"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_13
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_26
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_4
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_40
+#: model:crane.specification,name:crane.crane_specification_22
+#: model:crane.specification,name:crane.crane_specification_42
+#: model:crane.specification,name:crane.crane_specification_8
+#: model:ir.model.fields,field_description:crane.field_crane_task_labor_line_type
+#: model:ir.model.fields,field_description:crane.field_crane_task_type
+msgid "Type"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_name
+#: model:ir.ui.view,arch_db:crane.crane_inspection_point_type_form_view
+msgid "Type Name"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+msgid "Use template"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,help:crane.field_crane_equipment_feature_line_sequence
+#: model:ir.model.fields,help:crane.field_crane_specification_sequence
+msgid "Used to order Features."
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,help:crane.field_crane_inspection_sequence
+#: model:ir.model.fields,help:crane.field_crane_task_inspection_line_sequence
+msgid "Used to order Inspection Points."
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_12
+#: model:crane.equipment.feature.line,name:crane.crane_equipment_feature_line_3
+#: model:crane.specification,name:crane.crane_specification_41
+msgid "VIN"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_work_order_form_view
+msgid "Validate"
+msgstr ""
+
+#. module: crane
+#: model:ir.model.fields,field_description:crane.field_crane_equipment_feature_line_value
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_type_value_line_ids
+#: model:ir.model.fields,field_description:crane.field_crane_inspection_point_value_name
+msgid "Value"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_inspection_point_type_form_view
+msgid "Value List"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "WORK ORDER #"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_44
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_32
+msgid "Walkway"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_65
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_73
+msgid "Warehouse"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_17
+#: model:crane.inspection,name:crane.crane_inspection_98
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_5
+msgid "Wheels"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection,name:crane.crane_inspection_16
+#: model:crane.inspection,name:crane.crane_inspection_97
+#: model:crane.task.inspection.line,name:crane.crane_task_inspection_line_4
+msgid "Wire Rope/Chain Inspect."
+msgstr ""
+
+#. module: crane
+#: model:ir.actions.act_window,name:crane.action_work_order
+#: model:ir.actions.report.xml,name:crane.report_crane_work_order
+#: model:ir.model,name:crane.model_crane_work_order
+#: model:ir.model.fields,field_description:crane.field_crane_task_wo_id
+#: model:ir.model.fields,field_description:crane.field_crane_work_order_name
+#: model:ir.ui.menu,name:crane.menu_crane_work_order
+#: model:ir.ui.view,arch_db:crane.crane_work_order_form_view
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "Work Order"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_work_order_tree_view
+msgid "Work Orders"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_12
+msgid "XCM TC14H2 45835283"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_11
+msgid "XCMG"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.value,name:crane.crane_yes_value
+#: model:ir.ui.view,arch_db:crane.work_order
+msgid "YES"
+msgstr ""
+
+#. module: crane
+#: model:crane.inspection.point.type,name:crane.crane_yes_no_type
+msgid "YES/NO"
+msgstr ""
+
+#. module: crane
+#: model:ir.ui.view,arch_db:crane.crane_email_compose_message_wizard_form
+#: model:ir.ui.view,arch_db:crane.view_repeat_work_order
+msgid "or"
+msgstr ""
+
+#. module: crane
+#: model:ir.model,name:crane.model_report_crane_work_order
+msgid "report.crane.work_order"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment.feature.line,value:crane.crane_equipment_feature_line_4
+msgid "Сrawler"
+msgstr ""
+
+#. module: crane
+#: model:crane.equipment,name:crane.crane_equipment_1
+msgid "Сrawler Crane"
+msgstr ""
+
